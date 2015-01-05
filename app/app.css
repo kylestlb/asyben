@@ -1,30 +1,18 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+#wrapper {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.menu:before {
-  content: "[";
+li.logo, li.logo a {
+  color: #5A4817;  
+  font-weight: bold;
 }
 
-.menu:after {
-  content: "]";
+
+
+body {
+  background-color: #917F4F;
 }
 
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
