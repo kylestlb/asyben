@@ -1,8 +1,7 @@
 /* app css stylesheet */
 
 #wrapper {
-  max-width: 80%;
-  margin: 0 auto;
+  padding: 40px;
 }
 
 li.logo, li.logo a {
@@ -10,7 +9,15 @@ li.logo, li.logo a {
   font-weight: bold;
 }
 
+.pure-menu {
+  position:fixed;
 
+  z-index: 9999;
+
+}
+.vimeo-item {
+  padding: 10px;
+}
 
 body {
   background-color: #917F4F;

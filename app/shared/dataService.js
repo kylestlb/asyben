@@ -7,7 +7,7 @@ factory('dataService', ['$http',function($http){
 
 			return $http.get(url,{
 				headers: {
-					'Authorization': 'bearer insert_access_token_here'
+					'Authorization': 'bearer insert_token_here'
 				}
 			});
 //			}).then(function(data){
