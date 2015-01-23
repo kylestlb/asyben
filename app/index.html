@@ -8,28 +8,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>asyben</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">    
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
-    <ul>
-      <li class="logo"><a href="#/main">asyben</a></li>
-      <li><a href="#/vimeo">vimeo</a></li>
-      <li><a href="/gplus">g+</a></li>
-      <li><a href="/insta">insta</a></li>
-    </ul>
+  <div id="headwrap">
+    <header>
+      <div class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li class="logo"><a href="#/main">asyben</a></li>
+          <li><a href="#/vimeo">vimeo</a></li>
+          <li><a href="/gplus">g+</a></li>
+          <li><a href="/insta">insta</a></li>
+        </ul>
+      </div>
+    </header>
   </div>
-
-
-
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div id="wrapper" class="pure-g" ng-view></div>
+  <div class="pure-g" id="contentwrap" ng-view></div>
 
 
   <!-- In production use:
@@ -37,12 +39,17 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript"src="bower_components/lodash/dist/lodash.min.js"></script>
+  <script type="text/javascript"src="bower_components/angular-lodash/angular-lodash.js"></script>    
+
   <script src="shared/dataService.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
+  <script src="main/main.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+
 </body>
 </html>

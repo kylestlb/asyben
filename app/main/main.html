@@ -1,0 +1,8 @@
+<div ng-repeat="item in stuff" class="pure-u-1">
+	<div ng-if="item.src == 'vimeo'" ng-include src='"partials/vimeo-item.html"'></div>
+	<div ng-if="item.src == 'instagram'" ng-include src="'partials/instagram-item.html'"></div>
+	<div ng-if="item.src == 'gplus'" ng-include src="'partials/gplus-item.html'"></div>
+</div>
+
+
+
